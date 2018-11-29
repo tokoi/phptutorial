@@ -15,7 +15,9 @@ use App\User;
 
 use Illuminate\Http\Request;
 
-Route::get('/users', 'UserController@index');
+Route::get('/signup', 'UserController@new');
+
+Route::get('/users', 'UserController@show');
 Route::get('/', 'StaticPagesController@home');
 // Route::get('/home', 'StaticPagesController@home');
 Route::get('/help', 'StaticPagesController@help');
